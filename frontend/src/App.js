@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div className="App">
       <h1>
-      Testing modern arrow function
+      Testing modern arrow function 2
     </h1>
     </div>
   );
