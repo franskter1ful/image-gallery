@@ -1,23 +1,24 @@
+import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../src/components/Header';
+import Search from '../src/components/Search';
 
-function App() {
+const App = () => {
+  const [word, setWord] = useState('');
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    console.log(word);
+  }
+
+
   return (
     <div>
-      <Header title="Images Gallery for Mezzanine" />
+      <Header title="Mezzanine Gallery" />
+      <Search word={word} setWord={setWord} handleSubmit={handleSearchSubmit}/>
     </div>
   );
 }
 
-
-// const App = () => {
-//   return (
-//     <div className="App">
-//       <h1>
-//       Testing modern arrow function 2
-//     </h1>
-//     </div>
-//   );
-// }
 
 export default App;
