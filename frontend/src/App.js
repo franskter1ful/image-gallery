@@ -35,7 +35,7 @@ const App = () => {
 
   return (
     <div>
-      <Header title="Mezzanine Gallery" />
+      <Header title="Los Gallery" />
       <Search word={word} setWord={setWord} handleSubmit={handleSearchSubmit} />
       <Container className="mt-4">
         <Row sx={1} md={2} lg={3}>
