@@ -3,8 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../src/components/Header';
 import Search from '../src/components/Search';
 import ImageCard from '../src/components/ImageCard';
-import { Container, Col, Row } from 'react-bootstrap';
 import Welcome from './components/Welcome';
+import { Container, Col, Row } from 'react-bootstrap';
+
 //import _default from "react-bootstrap/esm/CardColumns";
 
 const UNSPLASH_KEY = process.env.REACT_APP_UNSPLASH_KEY;
@@ -46,7 +47,7 @@ const App = () => {
             {images.map((image, i) => (
               <Col key={i} className="pb-3">
                 <ImageCard
-                  key={i}
+                  //key={i}
                   image={image}
                   deleteImage={handleDeleteImage}
                 />
